@@ -8,8 +8,8 @@ const NavMenu = () => {
     console.log(clickedMenu)
   return (
     <div className='bg-white text-black grid grid-cols-7 px-20 text-[14px] font-semibold py-[18px]'>
-                {Menu?.map((e)=>(
-                    <div className={`cursor-pointer flex items-center px-2 py-2 rounded-lg ${clickedMenu===e?"border-[1px]  border-gray-600":"ps-[30px]"}`} onClick={()=>setClickedMenu(e)}>{clickedMenu===e?<span className='text-[21px] my-auto '>
+                {Menu?.map((e,i)=>(
+                    <div key={i} className={`cursor-pointer flex items-center px-2 py-2 rounded-lg ${clickedMenu===e?"border-[1px]  border-gray-600":"ps-[30px]"}`} onClick={()=>setClickedMenu(e)}>{clickedMenu===e?<span className='text-[21px] my-auto '>
                     <IoMdMenu /></span>:<></>} {e}</div>
                 ))}
             </div>
