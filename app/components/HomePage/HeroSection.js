@@ -4,7 +4,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const HeroSection = () => {
     return (
-        <div className="bg-[url('/hero.png')]  bg-cover bg-no-repeat mx-20 rounded-xl my-12 px-16 pb-10">
+        <div className="bg-[url('/hero.png')]  bg-cover bg-no-repeat mx-20 rounded-xl mt-12 mb-20 px-16 pb-10">
             <div className=" grid grid-cols-2  py-10">
                 <div className='mt-8'>
                     <p className='text-6xl font-bold text-black  leading-tight'>Best Headphone <br />in your{" "}
@@ -18,23 +18,23 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className='grid grid-cols-12 text-black px-8 text-xl justify-center'>
-                <div className='col-span-2 w-10 grid items-center justify-center rounded-full h-10 bg-[#FBFCFD] shadow-lg my-auto mx-auto'><BsArrowLeft />
+                <div className='col-span-2 w-10 grid items-center justify-center rounded-full h-10 bg-[#FBFCFD] shadow-lg shadow-gray-500 my-auto mx-auto'><BsArrowLeft />
                 </div>
                 <div className='col-span-8 grid grid-cols-2 gap-20'>
-                    <div className=' w-full h-[180px] bg-[rgba(36,36,36,0.7)] rounded-2xl shadow-2xl grid grid-cols-3'>
+                    <div className=' w-full h-[180px] bg-[rgba(36,36,36,0.7)] rounded-2xl shadow-lg shadow-gray-500 grid grid-cols-3'>
                         <img className='relative scale-[1.7] right-[40%] top-[20%]' src='/headphone1.png' />
                         <div className='col-span-2 py-5 grid justify-center font-semibold text-3xl'>
                             <span className='text-black text-2xl font-bold mx-auto'>soundcore</span> <span className=' mx-auto pb-6'>Q20i</span><div className='flex items-center justify-center '>$850<span className='text-[12px] line-through text-[#9f9faa]'>$1150</span></div>
                         </div>
                     </div>
-                    <div className=' w-full h-[180px] bg-[#F9FDFE] rounded-2xl shadow-2xl grid grid-cols-3'>
+                    <div className=' w-full h-[180px] bg-[#F9FDFE] rounded-2xl shadow-lg shadow-gray-500 grid grid-cols-3'>
                         <img className='relative scale-[1.7] right-[40%] top-[20%]' src='/headphone2.png' />
                         <div className='col-span-2 py-5 grid justify-center font-semibold text-3xl'>
                             <span className='text-black text-2xl font-bold mx-auto'>soundcore</span> <span className=' mx-auto pb-6'>Q20i</span><div className='flex items-center justify-center '>$850<span className='text-[12px] line-through text-[#9f9faa]'>$1150</span></div>
                         </div>
                     </div>
                 </div>
-                <div className='col-span-2 w-10 grid items-center justify-center rounded-full h-10 bg-[#FBFCFD] shadow-lg my-auto mx-auto'><BsArrowRight />
+                <div className='col-span-2 w-10 grid items-center justify-center rounded-full h-10 bg-[#FBFCFD] shadow-lg my-auto mx-auto shadow-gray-500'><BsArrowRight />
                 </div>
             </div>
         </div>
